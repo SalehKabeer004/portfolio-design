@@ -1,0 +1,132 @@
+@media only screen and (max-width:1025px) {
+    .container {
+        padding: 0px 50px !important;
+    }
+
+    .project.p-2 .project-content {
+        margin-right: 0px !important;
+    }
+
+    .project .gradient {
+        right: 0;
+    }
+
+    .project.p-2 .gradient {
+        left: 0;
+    }
+}
+
+@media only screen and (max-width:769px) {
+
+    .experience-card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .experience .gradient {
+        width: 90%;
+    }
+
+    .project {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .project-content {
+        padding: 20px 0px !important;
+        margin: 0;
+    }
+
+    .project .gradient {
+        top: 20px;
+        right: 0;
+        width: 70%;
+    }
+
+    .project img {
+        width: 100%;
+        min-width: 300px;
+        max-width: 400px !important;
+    }
+
+    .project.p-2 {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .project.p-2 .gradient {
+        left: 0;
+    }
+
+    /* .project.p-2 .project-content {
+        margin-right: 0px !important;
+    } */
+
+    .contact {
+        padding-top: 50px;
+    }
+
+}
+
+
+@media only screen and (max-width:450px) {
+
+    .container {
+        padding: 0px 20px !important;
+    }
+
+    .navbar .nav-links ul {
+        gap: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about .gradient {
+        width: 100%;
+    }
+
+    .about .gradient .about-arr {
+        top: 0px;
+        right: 0;
+        width: 150px;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .about .gradient .about-arr img {
+        transform: scaleY(-0.5) scaleX(-0.5) rotate(-38deg);
+    }
+
+    .about-content {
+        transform: translateX(0px);
+    }
+
+    .intro-desc {
+        width: 100% !important;
+    }
+
+    .experience-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project img {
+        width: 100%;
+        min-width: 200px;
+        max-width: 240px;
+    }
+
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+}

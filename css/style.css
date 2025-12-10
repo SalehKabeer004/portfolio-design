@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Preahvihear", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+body {
+    background-color: #11071F !important;
+    color: #fff !important;
+}
+
+body h1 {
+    font-size: clamp(38px, 4vw, 50px);
+}
+
+.container {
+    max-width: 1000px !important;
+}
+
+.navbar {
+    background-color: rgba(26, 11, 46, 1);
+    box-shadow: 0px 6px 22px -3px rgba(0, 0, 0, 0.1);
+    position: sticky !important;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    padding: 5px 0px;
+}
+
+.navbar .logo img {
+    width: 30px;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 100px;
+    margin: 0;
+}
+
+.navbar .nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+.content-body {
+    padding: 100px 0px 0px 0px;
+}
+
+.gradient {
+    width: 385px;
+    height: 431px;
+    background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.about .gradient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about .gradient .about-arr {
+    position: absolute;
+    display: flex;
+    top: 50px;
+    right: -50%;
+}
+
+.about-arr span {
+    color: #7127BA;
+}
+
+.about-content {
+    transform: translateX(-20px);
+}
+
+.about-content u {
+    color: #fff;
+}
+
+.about-content h1 span {
+    color: #7127BA;
+}
+
+.about-content h1 span::before {
+    content: "cover";
+    position: absolute;
+    color: transparent;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    transform: rotate(-4.74deg) translateX(-10px);
+    padding: 0px 10px;
+}
+
+.about-content p {
+    font-size: 11px;
+}
+
+.intro {
+    padding: 50px 0px;
+}
+
+.intro-desc {
+    margin-top: 50px;
+    width: 80%;
+}
+
+.experience {
+    position: relative;
+    padding: 50px 0px;
+}
+
+.experience .gradient {
+    position: absolute;
+    height: 100%;
+    width: 55%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.experience-card-container {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+}
+
+.experience-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 32px;
+    border-radius: 15px;
+    border: 2px solid rgba(105, 59, 147, 1);
+    border-style: inset;
+    box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
+    background: linear-gradient(110.49deg, #130428 19.95%, #251043 67.64%, #38126D 107.08%, #261045 156.61%, #190634 183.21%);
+}
+
+.experience-card:nth-child(2),
+.experience-card:nth-child(3) {
+    background: linear-gradient(95.56deg, #130428 0.58%, #251043 16.32%, #38126D 29.33%, #261045 45.66%, #190634 54.44%);
+}
+
+.experience-card h3 {
+    font-size: clamp(22px, 4vw, 26px);
+}
+
+.experience-card p {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.experience-card a {
+    background-color: rgba(44, 18, 80, 1);
+    border: 1px solid rgba(105, 59, 147, 1);
+    border-radius: 10px;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.experience-card:hover {
+    transform: translateY(-3px);
+    transition-duration: 600ms;
+}
+
+.team {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team h4 span {
+    color: #7127BA;
+}
+
+.team img {
+    width: 80%;
+    object-fit: contain;
+}
+
+.project {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.project .gradient {
+    position: absolute;
+    right: -60px;
+    top: 0;
+    z-index: -1;
+}
+
+.project img {
+    width: 100%;
+    min-width: 400px;
+    max-width: 500px;
+    background-color: #2B0B3A;
+    border-radius: 12px;
+}
+
+.project h5 {
+    color: #763CAC;
+}
+
+.project-content {
+    padding: 80px 0px;
+    width: 80%;
+    margin-right: -20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-desc p {
+    margin: 0;
+    padding: 20px 32px;
+    border-radius: 16px;
+    z-index: 6 !important;
+    background: radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(105, 59, 147, 0.2) 0%, rgba(110, 191, 244, 0.0447917) 77.08%, rgba(70, 144, 213, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background-image:  url(./assets/images/glass.png);
+    background-color: rgba(255, 255, 255, 0.05);
+    background-size: cover;
+    background-position: center;
+    /* semi-transparent white */
+    backdrop-filter: blur(10px);
+    /* creates the blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.project-icons i {
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.project.p-2 {
+    flex-direction: row-reverse;
+}
+
+.project.p-2 .project-content {
+    text-align: right;
+    margin-left: -20px;
+}
+
+.project.p-2 .project-desc {
+    text-align: left;
+}
+
+.project.p-2 .gradient {
+    position: absolute;
+    left: -60px;
+    top: 0;
+    z-index: -1;
+}
+
+.contact {
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 60%;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300px;
+}

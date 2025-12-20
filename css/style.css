@@ -9,6 +9,10 @@
     font-style: normal
 }
 
+.typewriter__dynamic span {
+    color:#7127BA
+}
+
 body {
     background-color: #11071F !important;
     color: #fff !important;

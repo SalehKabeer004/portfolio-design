@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/animation.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
@@ -25,8 +26,8 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Lab</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#lab">Lab</a></li>
                 </ul>
             </div>
         </div>
@@ -35,20 +36,33 @@
     <section class="content-body">
         <div class="container">
             <div class="about">
+
+                <!-- typewritter -->
+                <!-- <div class="typewriter">
+                    <span class="typewriter__static">I am a</span>
+                    <span class="typewriter__dynamic"></span>
+                </div> -->
+                <!-- typewritter -->
+
                 <div class="gradient">
                     <div class="about-arr"><img src="./assets/images/about-arr.png" alt="">
                         <h5>Hello! I Am <span>Saleh Kabeer</span></h5>
                     </div>
                     <img src="./assets/images/about.png" alt="">
                 </div>
-                <div class="about-content">
+                <div id="about" class="about-content">
                     <u>A Developer who</u>
                     <h1>Judges a book <br> by its <span>cover</span>...</h1>
+                    
                     <p>Because if the cover does not impress you what else can?</p>
                 </div>
             </div>
             <div class="intro">
-                <h1>I'm a Web Developer.| </h1>
+                <div class="typewriter">
+                        <span class="typewriter__static">I am a</span>
+                        <span  class="typewriter__dynamic"></span>
+                    </div>
+                <!-- <h1>I'm a Web Developer.| </h1> -->
                 <p>Currently, I'm a Web Developer at PathfinderGroup,</p>
                 <p class="intro-desc">A self-taught UI/UX designer, functioning in the industry for 3+ years now.
                     <br>
@@ -107,7 +121,7 @@
                 <p>that values improving people's lives through accessible design</p>
                 <img src="./assets/images/Skills.png" alt="">
             </div>
-            <div class="project p-1">
+            <div id="lab" class="project p-1">
                 <div class="gradient"></div>
                 <div class="project-content">
                     <div>

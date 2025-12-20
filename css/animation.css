@@ -1,0 +1,192 @@
+
+
+.typewriter {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.typewriter__static {
+  color: #fff;
+  margin-right: 8px;
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 700;
+}
+
+.typewriter__dynamic {
+  position: relative;
+  color: #fff;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff;
+  animation: typing 12s steps(14, end) infinite, blink 0.75s step-end infinite;
+  color: #fff;
+  font-size: clamp(28px, 4vw, 52px);
+}
+
+.typewriter__dynamic::before {
+  content: "Web Developer";
+  animation: textCycle 12s infinite;
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  7% {
+    width: 11ch;
+  }
+  20% {
+    width: 11ch;
+  }
+  22% {
+    width: 0;
+  }
+
+  25% {
+    width: 0;
+  }
+  32% {
+    width: 7.5ch;
+  }
+  45% {
+    width: 7.5ch;
+  }
+  47% {
+    width: 0;
+  }
+
+  50% {
+    width: 0;
+  }
+  57% {
+    width: 8.5ch;
+  }
+  70% {
+    width: 8.5ch;
+  }
+  72% {
+    width: 0;
+  }
+
+  75% {
+    width: 0;
+  }
+  82% {
+    width: 6ch;
+  }
+  95% {
+    width: 6ch;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+@keyframes textCycle {
+  0%,
+  24.9% {
+    content: "Web Developer";
+  }
+  25%,
+  49.9% {
+    content: "Footballer";
+  }
+  50%,
+  74.9% {
+    content: "UI Designer";
+  }
+  75%,
+  100% {
+    content: "Creator";
+  }
+}
+
+.tree {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  margin-left: 4px;
+}
+
+.tree__root {
+  color: #fff;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.tree__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  border-left: 1px solid #fff;
+}
+
+.tree__item {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 12px;
+  color: #fff;
+  line-height: 1;
+  animation: shine 3s ease infinite;
+}
+
+.tree__item:last-child {
+  margin-bottom: 0;
+}
+
+.tree__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.tree__item--1 {
+  animation-delay: 0s;
+}
+.tree__item--2 {
+  animation-delay: 1s;
+}
+.tree__item--3 {
+  animation-delay: 2s;
+}
+
+@keyframes shine {
+  0% {
+    color: #fff;
+    text-shadow: none;
+  }
+  20% {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  }
+  40% {
+    color: #fff;
+    text-shadow: none;
+  }
+  100% {
+    color: #fff;
+    text-shadow: none;
+  }
+}
